@@ -1,0 +1,26 @@
+PODS:
+  - AlivcLivePusherWithPlayer (3.3.5):
+    - AlivcLivePusherWithPlayer/AlivcLivePusherWithPlayer (= 3.3.5)
+  - AlivcLivePusherWithPlayer/AlivcLivePusherWithPlayer (3.3.5)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+
+DEPENDENCIES:
+  - AlivcLivePusherWithPlayer
+  - R.swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AlivcLivePusherWithPlayer
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  AlivcLivePusherWithPlayer: 8c847b7274eba770f9a3d1e41d6abc80b9739810
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+
+PODFILE CHECKSUM: 6c50d9679f4b7173a7d3211567b1bffabcebdadb
+
+COCOAPODS: 1.5.3
