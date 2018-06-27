@@ -78,7 +78,7 @@ struct R: Rswift.Validatable {
   
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
-      // There are no resources to validate
+      try _R.validate()
     }
     
     fileprivate init() {}
@@ -89,12 +89,20 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R {
+struct _R: Rswift.Validatable {
+  static func validate() throws {
+    try storyboard.validate()
+  }
+  
   struct nib {
     fileprivate init() {}
   }
   
-  struct storyboard {
+  struct storyboard: Rswift.Validatable {
+    static func validate() throws {
+      try main.validate()
+    }
+    
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
       typealias InitialController = UIKit.UIViewController
       
@@ -104,11 +112,38 @@ struct _R {
       fileprivate init() {}
     }
     
-    struct main: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = ViewController
+    struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = XYRootNavigationVC
       
       let bundle = R.hostingBundle
       let name = "Main"
+      let xyHomeVC = StoryboardViewControllerResource<XYHomeVC>(identifier: "XYHomeVC")
+      let xyRootNavigationVC = StoryboardViewControllerResource<XYRootNavigationVC>(identifier: "XYRootNavigationVC")
+      let xyRootScrollViewController = StoryboardViewControllerResource<XYRootScrollViewController>(identifier: "XYRootScrollViewController")
+      let xyVideoRecordVC = StoryboardViewControllerResource<XYVideoRecordVC>(identifier: "XYVideoRecordVC")
+      
+      func xyHomeVC(_: Void = ()) -> XYHomeVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyHomeVC)
+      }
+      
+      func xyRootNavigationVC(_: Void = ()) -> XYRootNavigationVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyRootNavigationVC)
+      }
+      
+      func xyRootScrollViewController(_: Void = ()) -> XYRootScrollViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyRootScrollViewController)
+      }
+      
+      func xyVideoRecordVC(_: Void = ()) -> XYVideoRecordVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyVideoRecordVC)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.main().xyVideoRecordVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyVideoRecordVC' could not be loaded from storyboard 'Main' as 'XYVideoRecordVC'.") }
+        if _R.storyboard.main().xyHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyHomeVC' could not be loaded from storyboard 'Main' as 'XYHomeVC'.") }
+        if _R.storyboard.main().xyRootNavigationVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyRootNavigationVC' could not be loaded from storyboard 'Main' as 'XYRootNavigationVC'.") }
+        if _R.storyboard.main().xyRootScrollViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyRootScrollViewController' could not be loaded from storyboard 'Main' as 'XYRootScrollViewController'.") }
+      }
       
       fileprivate init() {}
     }

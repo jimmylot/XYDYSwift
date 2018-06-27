@@ -16,6 +16,11 @@
 		ED9FAB7120E3547C00D7AFF9 /* XYDYSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB7020E3547C00D7AFF9 /* XYDYSwiftTests.swift */; };
 		ED9FAB7C20E3547C00D7AFF9 /* XYDYSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB7B20E3547C00D7AFF9 /* XYDYSwiftUITests.swift */; };
 		ED9FAB8D20E3570600D7AFF9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB8C20E3570600D7AFF9 /* R.generated.swift */; };
+		ED9FAB9320E3B8F300D7AFF9 /* XYRootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB9220E3B8F300D7AFF9 /* XYRootNavigationVC.swift */; };
+		ED9FAB9520E3B90C00D7AFF9 /* XYBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB9420E3B90C00D7AFF9 /* XYBaseVC.swift */; };
+		ED9FAB9920E3B94C00D7AFF9 /* XYHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB9820E3B94C00D7AFF9 /* XYHomeVC.swift */; };
+		ED9FAB9C20E3B9F800D7AFF9 /* XYRootScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB9B20E3B9F800D7AFF9 /* XYRootScrollViewController.swift */; };
+		ED9FAB9E20E3BAC700D7AFF9 /* XYVideoRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB9D20E3BAC700D7AFF9 /* XYVideoRecordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		ED9FAB7B20E3547C00D7AFF9 /* XYDYSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYDYSwiftUITests.swift; sourceTree = "<group>"; };
 		ED9FAB7D20E3547C00D7AFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9FAB8C20E3570600D7AFF9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		ED9FAB9220E3B8F300D7AFF9 /* XYRootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYRootNavigationVC.swift; sourceTree = "<group>"; };
+		ED9FAB9420E3B90C00D7AFF9 /* XYBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYBaseVC.swift; sourceTree = "<group>"; };
+		ED9FAB9820E3B94C00D7AFF9 /* XYHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYHomeVC.swift; sourceTree = "<group>"; };
+		ED9FAB9B20E3B9F800D7AFF9 /* XYRootScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYRootScrollViewController.swift; sourceTree = "<group>"; };
+		ED9FAB9D20E3BAC700D7AFF9 /* XYVideoRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYVideoRecordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,7 @@
 		ED9FAB5A20E3547B00D7AFF9 /* XYDYSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ED9FAB8E20E3B85A00D7AFF9 /* Class */,
 				ED9FAB8A20E3568900D7AFF9 /* Storyboard */,
 				ED9FAB8920E3567400D7AFF9 /* SupportFiles */,
 			);
@@ -166,6 +177,58 @@
 				ED9FAB5F20E3547B00D7AFF9 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ED9FAB8E20E3B85A00D7AFF9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FAB9620E3B91E00D7AFF9 /* ViewController */,
+				ED9FAB8F20E3B86500D7AFF9 /* Base */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		ED9FAB8F20E3B86500D7AFF9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FAB9120E3B87F00D7AFF9 /* Navigation */,
+				ED9FAB9020E3B87200D7AFF9 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ED9FAB9020E3B87200D7AFF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FAB9420E3B90C00D7AFF9 /* XYBaseVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ED9FAB9120E3B87F00D7AFF9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FAB9220E3B8F300D7AFF9 /* XYRootNavigationVC.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		ED9FAB9620E3B91E00D7AFF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FAB9720E3B93000D7AFF9 /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ED9FAB9720E3B93000D7AFF9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FAB9820E3B94C00D7AFF9 /* XYHomeVC.swift */,
+				ED9FAB9B20E3B9F800D7AFF9 /* XYRootScrollViewController.swift */,
+				ED9FAB9D20E3BAC700D7AFF9 /* XYVideoRecordVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,9 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9FAB9E20E3BAC700D7AFF9 /* XYVideoRecordVC.swift in Sources */,
+				ED9FAB9920E3B94C00D7AFF9 /* XYHomeVC.swift in Sources */,
+				ED9FAB9520E3B90C00D7AFF9 /* XYBaseVC.swift in Sources */,
 				ED9FAB5E20E3547B00D7AFF9 /* ViewController.swift in Sources */,
+				ED9FAB9320E3B8F300D7AFF9 /* XYRootNavigationVC.swift in Sources */,
 				ED9FAB5C20E3547B00D7AFF9 /* AppDelegate.swift in Sources */,
 				ED9FAB8D20E3570600D7AFF9 /* R.generated.swift in Sources */,
+				ED9FAB9C20E3B9F800D7AFF9 /* XYRootScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MV768ZTH59;
+				DEVELOPMENT_TEAM = 7W26525EVR;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/XYDYSwift/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -585,7 +653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MV768ZTH59;
+				DEVELOPMENT_TEAM = 7W26525EVR;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/XYDYSwift/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
