@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CBE9ADDF116824162558916D /* Pods_XYDYSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066076B42069F1C6EBB6D904 /* Pods_XYDYSwift.framework */; };
+		ED0A601E20E48347001BFBCF /* XYRootNaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A601D20E48347001BFBCF /* XYRootNaView.swift */; };
+		ED0A602220E48401001BFBCF /* XYUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A602120E48401001BFBCF /* XYUI.swift */; };
+		ED0A602520E48441001BFBCF /* UIColor+XY.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A602420E48441001BFBCF /* UIColor+XY.swift */; };
+		ED0A602820E489B0001BFBCF /* XYMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A602720E489B0001BFBCF /* XYMineVC.swift */; };
+		ED0A602B20E4B383001BFBCF /* XYRootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A602A20E4B383001BFBCF /* XYRootTabBarVC.swift */; };
+		ED0A602D20E4B3B4001BFBCF /* XYTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A602C20E4B3B4001BFBCF /* XYTabBarView.swift */; };
+		ED0A602F20E4B59B001BFBCF /* XYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A602E20E4B59B001BFBCF /* XYTabBarController.swift */; };
+		ED0A603420E4D72B001BFBCF /* XYAttentionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A603320E4D72B001BFBCF /* XYAttentionVC.swift */; };
+		ED0A603620E4D74E001BFBCF /* XYNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0A603520E4D74E001BFBCF /* XYNewsVC.swift */; };
 		ED9FAB5C20E3547B00D7AFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB5B20E3547B00D7AFF9 /* AppDelegate.swift */; };
 		ED9FAB5E20E3547B00D7AFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FAB5D20E3547B00D7AFF9 /* ViewController.swift */; };
 		ED9FAB6120E3547B00D7AFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9FAB5F20E3547B00D7AFF9 /* Main.storyboard */; };
@@ -44,6 +53,15 @@
 		062D9EB5A50D083FB83EBB50 /* Pods-XYDYSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYDYSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYDYSwift/Pods-XYDYSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		066076B42069F1C6EBB6D904 /* Pods_XYDYSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYDYSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA66574E82CF733D30D785D4 /* Pods-XYDYSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYDYSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYDYSwift/Pods-XYDYSwift.release.xcconfig"; sourceTree = "<group>"; };
+		ED0A601D20E48347001BFBCF /* XYRootNaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYRootNaView.swift; sourceTree = "<group>"; };
+		ED0A602120E48401001BFBCF /* XYUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYUI.swift; sourceTree = "<group>"; };
+		ED0A602420E48441001BFBCF /* UIColor+XY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+XY.swift"; sourceTree = "<group>"; };
+		ED0A602720E489B0001BFBCF /* XYMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYMineVC.swift; sourceTree = "<group>"; };
+		ED0A602A20E4B383001BFBCF /* XYRootTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYRootTabBarVC.swift; sourceTree = "<group>"; };
+		ED0A602C20E4B3B4001BFBCF /* XYTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYTabBarView.swift; sourceTree = "<group>"; };
+		ED0A602E20E4B59B001BFBCF /* XYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYTabBarController.swift; sourceTree = "<group>"; };
+		ED0A603320E4D72B001BFBCF /* XYAttentionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYAttentionVC.swift; sourceTree = "<group>"; };
+		ED0A603520E4D74E001BFBCF /* XYNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYNewsVC.swift; sourceTree = "<group>"; };
 		ED9FAB5820E3547B00D7AFF9 /* XYDYSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYDYSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9FAB5B20E3547B00D7AFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9FAB5D20E3547B00D7AFF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +124,72 @@
 				066076B42069F1C6EBB6D904 /* Pods_XYDYSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED0A601F20E483E8001BFBCF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A602320E48426001BFBCF /* Extension */,
+				ED0A602020E483F3001BFBCF /* Define */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ED0A602020E483F3001BFBCF /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A602120E48401001BFBCF /* XYUI.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		ED0A602320E48426001BFBCF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A602420E48441001BFBCF /* UIColor+XY.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED0A602620E48995001BFBCF /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A602720E489B0001BFBCF /* XYMineVC.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		ED0A602920E4B34F001BFBCF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A602A20E4B383001BFBCF /* XYRootTabBarVC.swift */,
+				ED0A602E20E4B59B001BFBCF /* XYTabBarController.swift */,
+				ED0A602C20E4B3B4001BFBCF /* XYTabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		ED0A603020E4D6A2001BFBCF /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A603320E4D72B001BFBCF /* XYAttentionVC.swift */,
+			);
+			path = Attention;
+			sourceTree = "<group>";
+		};
+		ED0A603120E4D6AA001BFBCF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A603520E4D74E001BFBCF /* XYNewsVC.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		ED0A603220E4D6D9001BFBCF /* Add */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 		ED9FAB4F20E3547B00D7AFF9 = {
@@ -182,6 +266,7 @@
 		ED9FAB8E20E3B85A00D7AFF9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A601F20E483E8001BFBCF /* Common */,
 				ED9FAB9620E3B91E00D7AFF9 /* ViewController */,
 				ED9FAB8F20E3B86500D7AFF9 /* Base */,
 			);
@@ -191,6 +276,7 @@
 		ED9FAB8F20E3B86500D7AFF9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A602920E4B34F001BFBCF /* TabBar */,
 				ED9FAB9120E3B87F00D7AFF9 /* Navigation */,
 				ED9FAB9020E3B87200D7AFF9 /* ViewController */,
 			);
@@ -209,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				ED9FAB9220E3B8F300D7AFF9 /* XYRootNavigationVC.swift */,
+				ED0A601D20E48347001BFBCF /* XYRootNaView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -216,6 +303,10 @@
 		ED9FAB9620E3B91E00D7AFF9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A603220E4D6D9001BFBCF /* Add */,
+				ED0A603120E4D6AA001BFBCF /* News */,
+				ED0A603020E4D6A2001BFBCF /* Attention */,
+				ED0A602620E48995001BFBCF /* Mine */,
 				ED9FAB9720E3B93000D7AFF9 /* Home */,
 			);
 			path = ViewController;
@@ -376,6 +467,7 @@
 				"${PODS_ROOT}/AlivcLivePusherWithPlayer/AlivcLibFace.framework",
 				"${PODS_ROOT}/AlivcLivePusherWithPlayer/AliThirdparty.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -386,6 +478,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlivcLibFace.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliThirdparty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,11 +545,20 @@
 			files = (
 				ED9FAB9E20E3BAC700D7AFF9 /* XYVideoRecordVC.swift in Sources */,
 				ED9FAB9920E3B94C00D7AFF9 /* XYHomeVC.swift in Sources */,
+				ED0A603620E4D74E001BFBCF /* XYNewsVC.swift in Sources */,
 				ED9FAB9520E3B90C00D7AFF9 /* XYBaseVC.swift in Sources */,
+				ED0A601E20E48347001BFBCF /* XYRootNaView.swift in Sources */,
+				ED0A602820E489B0001BFBCF /* XYMineVC.swift in Sources */,
+				ED0A602D20E4B3B4001BFBCF /* XYTabBarView.swift in Sources */,
+				ED0A602220E48401001BFBCF /* XYUI.swift in Sources */,
 				ED9FAB5E20E3547B00D7AFF9 /* ViewController.swift in Sources */,
+				ED0A602520E48441001BFBCF /* UIColor+XY.swift in Sources */,
+				ED0A602B20E4B383001BFBCF /* XYRootTabBarVC.swift in Sources */,
+				ED0A602F20E4B59B001BFBCF /* XYTabBarController.swift in Sources */,
 				ED9FAB9320E3B8F300D7AFF9 /* XYRootNavigationVC.swift in Sources */,
 				ED9FAB5C20E3547B00D7AFF9 /* AppDelegate.swift in Sources */,
 				ED9FAB8D20E3570600D7AFF9 /* R.generated.swift in Sources */,
+				ED0A603420E4D72B001BFBCF /* XYAttentionVC.swift in Sources */,
 				ED9FAB9C20E3B9F800D7AFF9 /* XYRootScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

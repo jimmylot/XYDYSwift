@@ -5,13 +5,13 @@ target 'XYDYSwift' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'R.swift'
+    pod 'R.swift'
+    pod 'SnapKit'
 
-
-# 阿里云 播放器 3.4.0.1
-  #pod 'AliyunPlayer_iOS/AliyunVodPlayerSDK'
-  # 依赖播放器版本 3.2.0
-  pod 'AlivcLivePusherWithPlayer'
-  #pod 'AliyunPlayerSDK'
+    # 阿里云 播放器 3.4.0.1
+    #pod 'AliyunPlayer_iOS/AliyunVodPlayerSDK'
+    # 依赖播放器版本 3.2.0
+    pod 'AlivcLivePusherWithPlayer'
+    #pod 'AliyunPlayerSDK'
 
 end

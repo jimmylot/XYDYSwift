@@ -14,22 +14,13 @@ class XYBaseVC: UIViewController {
         super.viewDidLoad()
 
         self.navigationController?.setNavigationBarHidden(true, animated: false);
+//        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setNaView() {
+        let navView = XYRootNaView.rootNaView(title: "jimmy")
+        self.view.addSubview(navView)
     }
-    */
 
 }

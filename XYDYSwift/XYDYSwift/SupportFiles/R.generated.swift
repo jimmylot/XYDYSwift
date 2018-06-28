@@ -31,8 +31,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
+    /// Image `back_f2`.
+    static let back_f2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "back_f2")
+    /// Image `back_white`.
+    static let back_white = Rswift.ImageResource(bundle: R.hostingBundle, name: "back_white")
+    
+    /// `UIImage(named: "back_f2", bundle: ..., traitCollection: ...)`
+    static func back_f2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.back_f2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "back_white", bundle: ..., traitCollection: ...)`
+    static func back_white(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.back_white, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -117,13 +132,29 @@ struct _R: Rswift.Validatable {
       
       let bundle = R.hostingBundle
       let name = "Main"
+      let xyAttentionVC = StoryboardViewControllerResource<XYAttentionVC>(identifier: "XYAttentionVC")
       let xyHomeVC = StoryboardViewControllerResource<XYHomeVC>(identifier: "XYHomeVC")
+      let xyMineVC = StoryboardViewControllerResource<XYMineVC>(identifier: "XYMineVC")
+      let xyNewsVC = StoryboardViewControllerResource<XYNewsVC>(identifier: "XYNewsVC")
       let xyRootNavigationVC = StoryboardViewControllerResource<XYRootNavigationVC>(identifier: "XYRootNavigationVC")
       let xyRootScrollViewController = StoryboardViewControllerResource<XYRootScrollViewController>(identifier: "XYRootScrollViewController")
+      let xyRootTabBarVC = StoryboardViewControllerResource<XYRootTabBarVC>(identifier: "XYRootTabBarVC")
       let xyVideoRecordVC = StoryboardViewControllerResource<XYVideoRecordVC>(identifier: "XYVideoRecordVC")
+      
+      func xyAttentionVC(_: Void = ()) -> XYAttentionVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyAttentionVC)
+      }
       
       func xyHomeVC(_: Void = ()) -> XYHomeVC? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyHomeVC)
+      }
+      
+      func xyMineVC(_: Void = ()) -> XYMineVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyMineVC)
+      }
+      
+      func xyNewsVC(_: Void = ()) -> XYNewsVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyNewsVC)
       }
       
       func xyRootNavigationVC(_: Void = ()) -> XYRootNavigationVC? {
@@ -134,14 +165,22 @@ struct _R: Rswift.Validatable {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyRootScrollViewController)
       }
       
+      func xyRootTabBarVC(_: Void = ()) -> XYRootTabBarVC? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyRootTabBarVC)
+      }
+      
       func xyVideoRecordVC(_: Void = ()) -> XYVideoRecordVC? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: xyVideoRecordVC)
       }
       
       static func validate() throws {
         if _R.storyboard.main().xyVideoRecordVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyVideoRecordVC' could not be loaded from storyboard 'Main' as 'XYVideoRecordVC'.") }
-        if _R.storyboard.main().xyHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyHomeVC' could not be loaded from storyboard 'Main' as 'XYHomeVC'.") }
         if _R.storyboard.main().xyRootNavigationVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyRootNavigationVC' could not be loaded from storyboard 'Main' as 'XYRootNavigationVC'.") }
+        if _R.storyboard.main().xyRootTabBarVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyRootTabBarVC' could not be loaded from storyboard 'Main' as 'XYRootTabBarVC'.") }
+        if _R.storyboard.main().xyMineVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyMineVC' could not be loaded from storyboard 'Main' as 'XYMineVC'.") }
+        if _R.storyboard.main().xyNewsVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyNewsVC' could not be loaded from storyboard 'Main' as 'XYNewsVC'.") }
+        if _R.storyboard.main().xyHomeVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyHomeVC' could not be loaded from storyboard 'Main' as 'XYHomeVC'.") }
+        if _R.storyboard.main().xyAttentionVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyAttentionVC' could not be loaded from storyboard 'Main' as 'XYAttentionVC'.") }
         if _R.storyboard.main().xyRootScrollViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'xyRootScrollViewController' could not be loaded from storyboard 'Main' as 'XYRootScrollViewController'.") }
       }
       
